@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conservation - Wildlife Diversity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp { animation: fadeInUp 1s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <nav class="bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white shadow-xl sticky top-0 z-50 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold flex items-center gap-2">🌿 Wildlife Portal</h1>
+      <div class="hidden md:flex gap-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a>
+        <a href="species.html" class="hover:text-yellow-300 transition duration-300">Species</a>
+        <a href="threats.html" class="hover:text-yellow-300 transition duration-300">Threats</a>
+        <a href="conservation.html" class="hover:text-yellow-300 transition duration-300">Conservation</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition duration-300">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+      <a href="species.html" class="block py-2 hover:text-yellow-300">Species</a>
+      <a href="threats.html" class="block py-2 hover:text-yellow-300">Threats</a>
+      <a href="conservation.html" class="block py-2 hover:text-yellow-300">Conservation</a>
+      <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+    </div>
+  </nav>
+
+  <header class="text-center py-10 bg-green-200 shadow-inner">
+    <h2 class="text-4xl font-bold text-green-900">Conservation Efforts</h2>
+    <p class="text-lg text-gray-700 mt-2">Preserving biodiversity through strategic actions and awareness</p>
+  </header>
+
+  <section class="px-6 py-10 max-w-6xl mx-auto space-y-10">
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Why is Wildlife Conservation Necessary?</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Prevents extinction of endangered species.</li>
+        <li>Maintains ecological balance.</li>
+        <li>Supports biodiversity essential for food, medicine & climate regulation.</li>
+        <li>Boosts eco-tourism and livelihood for rural populations.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Key Government Policies & Acts</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li><strong>Wildlife Protection Act (1972):</strong> Foundation of legal conservation in India.</li>
+        <li><strong>Forest Conservation Act (1980):</strong> Prevents deforestation by regulating diversion.</li>
+        <li><strong>Environment Protection Act (1986):</strong> Umbrella law for pollution control and wildlife.</li>
+        <li><strong>CAMPA Fund:</strong> Used for compensatory afforestation and biodiversity efforts.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">State-wise Conservation Highlights</h3>
+      <ul class="space-y-2 text-gray-700">
+        <li><strong>Madhya Pradesh:</strong> Known as the Tiger State. Has 11 national parks including Kanha & Bandhavgarh.</li>
+        <li><strong>Assam:</strong> Kaziranga National Park is a success story for one-horned rhino conservation.</li>
+        <li><strong>Karnataka:</strong> Houses Nagarhole & Bandipur, key habitats for elephants and tigers.</li>
+        <li><strong>Uttarakhand:</strong> Home to Jim Corbett National Park, India’s first national park.</li>
+        <li><strong>Chhattisgarh:</strong> Focus on tribal participation and dense forest preservation.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Government Investment & Schemes</h3>
+      <p class="text-gray-700">The Indian government has significantly increased funding for conservation through:</p>
+      <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li><strong>Project Tiger:</strong> ₹3000 crore allocated under Centrally Sponsored Scheme.</li>
+        <li><strong>Project Elephant:</strong> Over ₹250 crore invested since inception.</li>
+        <li><strong>Integrated Development of Wildlife Habitats:</strong> Aims at both species and habitat protection.</li>
+        <li><strong>Eco-Sensitive Zones:</strong> Over 600 zones identified near protected areas.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Success Stories in India</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li><strong>Gir National Park:</strong> Home to the last Asiatic lions, whose population has steadily grown.</li>
+        <li><strong>Snow Leopard Project:</strong> Started in 2009, covering habitats in J&K, HP, Uttarakhand, Arunachal Pradesh.</li>
+        <li><strong>Amur Falcon Conservation (Nagaland):</strong> Migratory bird conservation with community participation.</li>
+      </ul>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-xl animate-fadeInUp">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Future Conservation Strategies</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Increasing use of technology like drones, AI surveillance & e-patrolling.</li>
+        <li>Greater public-private partnerships for habitat restoration.</li>
+        <li>Strengthening local communities as custodians of forests.</li>
+        <li>Expanding nature education in schools and rural outreach.</li>
+      </ul>
+    </div>
+
+    <div class="bg-green-800 text-white rounded-xl p-6 shadow-xl text-center animate-fadeInUp">
+      <h3 class="text-3xl font-bold mb-2">India's Conservation Snapshot (2025)</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div><span class="text-4xl font-bold">106</span><p>National Parks</p></div>
+        <div><span class="text-4xl font-bold">567</span><p>Wildlife Sanctuaries</p></div>
+        <div><span class="text-4xl font-bold">52</span><p>Tiger Reserves</p></div>
+        <div><span class="text-4xl font-bold">200+</span><p>Conservation Projects</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-800 text-white text-center p-4 mt-8">
+    &copy; 2025 Wildlife Diversity Portal | Designed by Chandan Kumar
+  </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildlife Diversity Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById("timer").textContent = now.toLocaleString();
+    }, 1000);
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white shadow-xl sticky top-0 z-50 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold flex items-center gap-2">🌿 Wildlife Portal</h1>
+      <div class="hidden md:flex gap-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a>
+        <a href="species.html" class="hover:text-yellow-300 transition duration-300">Species</a>
+        <a href="threats.html" class="hover:text-yellow-300 transition duration-300">Threats</a>
+        <a href="conservation.html" class="hover:text-yellow-300 transition duration-300">Conservation</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition duration-300">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+      <a href="species.html" class="block py-2 hover:text-yellow-300">Species</a>
+      <a href="threats.html" class="block py-2 hover:text-yellow-300">Threats</a>
+      <a href="conservation.html" class="block py-2 hover:text-yellow-300">Conservation</a>
+      <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-white text-center" style="background-image: url('https://source.unsplash.com/1600x900/?wildlife,nature');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-xl shadow-2xl animate-slideUp">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 tracking-tight drop-shadow-lg">Explore Wildlife Diversity</h2>
+      <p class="text-2xl font-medium mb-2 animate-fadeIn">Protecting Nature for a Sustainable Future</p>
+      <div class="text-lg font-semibold mt-4 animate-pulse">Current Time: <span id="timer" class="text-yellow-300"></span></div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Why Wildlife Matters -->
+  <section class="max-w-6xl mx-auto px-6 py-16 text-center animate-fadeIn">
+    <h3 class="text-4xl font-bold mb-6 text-green-800">Why Wildlife Matters?</h3>
+    <p class="text-lg text-gray-700 leading-loose mb-6">
+      Wildlife is the heartbeat of our planet. It helps maintain the ecological balance, supports ecosystems, and ensures the sustainability of life on Earth. Beyond environmental reasons, wildlife is crucial for scientific research, tourism, and indigenous cultures.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8 text-left text-gray-800 mt-8">
+      <div>
+        <h4 class="text-2xl font-semibold text-green-700 mb-2">Ecological Balance</h4>
+        <p>Wildlife regulates natural processes like pollination, seed dispersal, pest control, and nutrient cycling.</p>
+      </div>
+      <div>
+        <h4 class="text-2xl font-semibold text-green-700 mb-2">Cultural Importance</h4>
+        <p>Many communities across India and the world hold spiritual and traditional values linked to animal and forest life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wildlife Needs -->
+  <section class="bg-white py-12 px-6 md:px-12 animate-slideUp">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-700 mb-6">Need for Wildlife Diversity</h2>
+      <ul class="list-disc text-left mt-4 max-w-3xl mx-auto text-gray-800 text-lg">
+        <li>Maintaining food chains and ecological balance</li>
+        <li>Providing genetic resources and medicinal benefits</li>
+        <li>Preserving cultural and heritage values</li>
+        <li>Ensuring climate stability and preventing natural disasters</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Government Acts -->
+  <section class="bg-white py-16 px-6 animate-slideUp">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-10">Government Acts & Initiatives</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div class="bg-green-100 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold text-green-700 mb-2">Wildlife Protection Act, 1972</h4>
+          <p>Provides a legal framework to protect wild animals, birds, and plants across India. It has six schedules offering varying protection levels.</p>
+        </div>
+        <div class="bg-green-100 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold text-green-700 mb-2">Project Tiger</h4>
+          <p>Launched in 1973 to conserve Bengal tigers and their habitats. Over 50 reserves are now protected under this project.</p>
+        </div>
+        <div class="bg-green-100 p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-bold text-green-700 mb-2">National Biodiversity Act, 2002</h4>
+          <p>Focuses on conservation and sustainable use of biodiversity, supported by Biodiversity Management Committees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- State-wise Wildlife Policy -->
+  <section class="bg-green-100 py-12 px-6 animate-fadeIn">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-green-800 mb-10">State-wise Wildlife Policies (India)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Keep your state cards as-is -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Maharashtra</h3>
+          <p class="text-gray-700">Melghat Tiger Reserve and Sanjay Gandhi National Park supported by eco-tourism policies.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Assam</h3>
+          <p class="text-gray-700">Kaziranga Park protected under Assam Act with strict anti-poaching law.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Rajasthan</h3>
+          <p class="text-gray-700">Ranthambore and Desert Parks managed under Forest & Wildlife Department.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Kerala</h3>
+          <p class="text-gray-700">Silent Valley & Periyar Parks aided by Kerala Eco Development programs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Madhya Pradesh</h3>
+          <p class="text-gray-700">'Tiger State' with active conservation in Kanha, Pench, and Bandhavgarh.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Bihar</h3>
+          <p class="text-gray-700">Valmiki Reserve & Bhimbandh Sanctuary under Biodiversity Board initiative.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biodiversity Stats -->
+  <section class="bg-green-50 py-16 px-6 animate-fadeIn">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-10">India’s Wildlife Diversity at a Glance</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-green-900">
+        <div class="bg-white shadow-lg p-6 rounded-xl">
+          <h3 class="text-4xl font-bold text-green-700">106</h3>
+          <p class="mt-2 text-lg">National Parks</p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-xl">
+          <h3 class="text-4xl font-bold text-green-700">564</h3>
+          <p class="mt-2 text-lg">Wildlife Sanctuaries</p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-xl">
+          <h3 class="text-4xl font-bold text-green-700">53+</h3>
+          <p class="mt-2 text-lg">Tiger Reserves</p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-xl">
+          <h3 class="text-4xl font-bold text-green-700">7.6%</h3>
+          <p class="mt-2 text-lg">Of World's Fauna</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-green-700 text-white py-16 text-center px-6 animate-slideUp">
+    <h2 class="text-3xl font-bold mb-4">Join the Conservation Movement</h2>
+    <p class="text-lg mb-6">Every small step helps. Raise awareness, volunteer, or donate to protect our biodiversity.</p>
+    <a href="contact.html" class="inline-block bg-yellow-300 text-green-900 font-bold py-3 px-6 rounded-full shadow-md hover:bg-yellow-400 transition">Get Involved</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white text-center p-6 mt-12">
+    <p class="text-sm">&copy; 2025 Wildlife Diversity Portal | Designed by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Styles -->
+  <style>
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-slideUp { animation: slideUp 1s ease-out; }
+    .animate-fadeIn { animation: fadeIn 1.5s ease-in; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+</body>
+</html>
