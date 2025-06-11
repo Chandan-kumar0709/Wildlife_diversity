@@ -1,0 +1,16 @@
+{
+  "name": "wildlife-portal",
+  "version": "1.0.0",
+  "description": "Full-stack web portal for Wildlife Diversity using Node.js and JSON",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": ["wildlife", "diversity", "nodejs", "json", "express"],
+  "author": "Chandan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
