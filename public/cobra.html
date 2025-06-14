@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Cobra - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-emerald-900 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Indian Cobra - Conservation & Habitat</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Cobra (*Naja naja*) is one of the most iconic and revered snakes in the Indian subcontinent. Famous for its hood and hypnotic display, the Indian Cobra is deeply embedded in Indian culture, mythology, and folklore. It is a venomous snake and a member of the "Big Four" species responsible for the majority of snakebite deaths in India.
+        <br><br>
+        Despite its fearsome reputation, the cobra plays a vital role in ecosystems by controlling rodent populations. Due to illegal snake charming, habitat loss, and human conflict, the species is increasingly vulnerable and needs attention in terms of conservation and education.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Cobra belongs to the Elapidae family and is classified as:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Reptilia</li>
+          <li><strong>Order:</strong> Squamata</li>
+          <li><strong>Family:</strong> Elapidae</li>
+          <li><strong>Genus:</strong> Naja</li>
+          <li><strong>Species:</strong> N. naja</li>
+        </ul>
+        Indian Cobras are found in a variety of habitats, including forests, agricultural lands, rocky terrain, and even urban areas. They prefer environments where they can easily find shelter in holes, termite mounds, or thick vegetation. Their adaptability to both wet and dry habitats makes them one of the most widespread snake species in South Asia.
+      </p>
+    </section>
+
+    <!-- About Indian Cobra -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">About the Indian Cobra</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/cobra.jpg"
+               alt="Indian Cobra"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Indian Cobra is easily recognized by its wide hood, which it expands when threatened. The hood is often marked with distinctive circular patterns or "eye spots." Cobras are usually around 1 to 1.5 meters long, but can grow up to 2.2 meters. They have smooth scales, a rounded snout, and are typically black, brown, or yellowish in color.
+            <br><br>
+            Cobras feed on rodents, frogs, birds, and other snakes. Their venom is neurotoxic, affecting the nervous system and potentially leading to respiratory failure in extreme cases. Despite this, they are shy and prefer to escape rather than attack unless provoked.
+            <br><br>
+            These snakes are oviparous, laying 10–30 eggs in secure and warm places. The female guards the eggs until hatching, which is rare behavior among snakes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribution in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Cobra is found across most of India, from the Himalayan foothills to the southern tip. It is especially common in the states of:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Uttar Pradesh and Bihar</li>
+          <li>West Bengal and Assam</li>
+          <li>Maharashtra and Madhya Pradesh</li>
+          <li>Tamil Nadu, Kerala, and Karnataka</li>
+        </ul>
+        Due to urban expansion and loss of forest cover, cobras increasingly encounter human populations. Snakebite incidents are common, making education about snake behavior and bite prevention crucial in rural and semi-urban areas.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        Though not officially endangered, the Indian Cobra faces serious threats, including:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Habitat destruction due to agriculture and urbanization</li>
+          <li>Persecution and killing due to fear and misunderstanding</li>
+          <li>Illegal use in snake charming and extraction of venom</li>
+          <li>Roadkills and environmental pollution</li>
+        </ul>
+        The Indian Wildlife Protection Act of 1972 lists the cobra under Schedule I, offering it the highest level of legal protection. Awareness campaigns, rescue programs, and antivenom distribution centers are actively helping to mitigate human-wildlife conflict.
+        <br><br>
+        NGOs and state forest departments also work with traditional snake handlers to transition into wildlife education roles instead of performing illegal shows.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-emerald-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Cobra symbolizes both fear and fascination. Revered in mythology and feared in reality, this majestic snake deserves our respect and protection. As humans expand into wild territories, peaceful coexistence is key. Through education, conservation, and legal protection, we can ensure that the cobra continues to slither through the wild and remain an essential part of India’s ecological and cultural landscape.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-900 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

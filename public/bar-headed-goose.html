@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bar-headed Goose - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Bar-headed Goose - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Bar-headed Goose (<em>Anser indicus</em>) is one of the world’s highest-flying birds, famous for its incredible migratory journey over the Himalayas. Native to Central Asia, it winters in the Indian subcontinent, including India, Nepal, and Bangladesh. During migration, this bird is known to fly at altitudes exceeding 29,000 feet — heights equivalent to those of commercial airliners and higher than Mount Everest. Its extraordinary physiological adaptations have fascinated scientists for decades.
+        <br><br>
+        Recognized by the two distinctive black bars across the back of its head, this goose has a graceful, soft-grey plumage, an orange-yellow beak, and orange legs. It is known for its sociable nature and usually travels in flocks. The Bar-headed Goose primarily inhabits high-altitude wetlands, lakes, and marshes. Despite its resilience, habitat degradation due to pollution, encroachment, and water depletion poses a threat to its migratory stopovers and breeding grounds. In India, it is often spotted in states like Uttar Pradesh, Madhya Pradesh, and Tamil Nadu during the winter months.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Bar-headed Goose belongs to the Anatidae family, which includes ducks, geese, and swans. It is specially adapted to life at high altitudes and cold climates. Here is its biological classification:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Aves</li>
+          <li><strong>Order:</strong> Anseriformes</li>
+          <li><strong>Family:</strong> Anatidae</li>
+          <li><strong>Genus:</strong> Anser</li>
+          <li><strong>Species:</strong> Anser indicus</li>
+        </ul>
+        Their natural habitat consists of high-altitude lakes and wetlands of Central Asia and the Tibetan Plateau. During winter, they migrate southward to the Indian subcontinent. In India, their preferred habitats include lakes, reservoirs, and large wetlands, especially those located in protected areas. They are highly adaptive and can often be seen feeding alongside agricultural fields and floodplains near water bodies. The species’ distribution and health directly reflect the state of wetland ecosystems, making them essential for biodiversity monitoring and conservation strategies.
+      </p>
+    </section>
+
+    <!-- About the Bar-headed Goose -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">About the Bar-headed Goose</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/bar-headed-goose.jpg"
+               alt="Bar-headed Goose"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Bar-headed Goose is medium-sized, weighing around 2–3 kg and with a wingspan of approximately 140–160 cm. Its most striking features are the black bars on its head, sleek grey body, and yellow-orange beak and legs. This species is herbivorous and feeds primarily on grass, seeds, grains, and aquatic vegetation. They are diurnal feeders and forage both on land and in shallow water.
+            <br><br>
+            What makes the Bar-headed Goose unique is its ability to survive in extremely low oxygen conditions at high altitudes. They have a more efficient respiratory system, larger lungs, and hemoglobin with a higher affinity for oxygen. These adaptations allow them to fly over the Himalayas with limited oxygen availability, strong winds, and sub-zero temperatures. Their long migratory journeys are a marvel of endurance and evolutionary biology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presence in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        The Bar-headed Goose is a regular winter visitor to India and can be found in various parts of the country between October and March. Important locations include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Uttar Pradesh:</strong> Bharatpur Bird Sanctuary and Ganga floodplains</li>
+          <li><strong>Delhi:</strong> Yamuna Biodiversity Park</li>
+          <li><strong>Madhya Pradesh:</strong> Chambal River Sanctuary</li>
+          <li><strong>Tamil Nadu:</strong> Vedanthangal Bird Sanctuary</li>
+          <li><strong>Odisha:</strong> Chilika Lake</li>
+          <li><strong>Assam:</strong> Kaziranga wetlands</li>
+        </ul>
+        Their presence in these locations not only enhances avian diversity but also boosts ecotourism. These birds are generally peaceful and integrate well with other migratory species such as ducks, teals, and cranes. Conservation efforts are crucial to maintaining the sanctity and health of the wetlands that serve as their temporary homes. They also rely on clean water and minimal human disturbance for safe wintering and feeding.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        Although the Bar-headed Goose is listed as Least Concern by the IUCN, it faces increasing threats due to human activities:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Habitat degradation and wetland drainage</li>
+          <li>Pollution of water bodies with chemicals and sewage</li>
+          <li>Disturbance by tourism and local fishing activity</li>
+          <li>Collisions with power lines during migration</li>
+          <li>Poaching in some regions for meat or traditional medicine</li>
+        </ul>
+        Conservation measures in India include declaring protected wetlands, regulating tourism, and improving habitat quality through clean-up and restoration programs. Citizen science initiatives also help track the movement and numbers of migratory birds. Local communities play a vital role in reducing poaching and promoting awareness. Further research is needed to understand climate change's impact on their migration and breeding behavior.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Bar-headed Goose is a symbol of nature’s resilience and wonder. Its incredible migratory flight over the Himalayas is a feat unmatched in the avian world. In India, the goose enriches wetland biodiversity and brings international attention to migratory bird conservation. Ensuring their future demands protection of vital wetland habitats, community education, and international cooperation under conventions like the CMS (Convention on Migratory Species). By protecting this sky traveler, we preserve the beauty and complexity of natural migration patterns and our delicate ecological balance.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

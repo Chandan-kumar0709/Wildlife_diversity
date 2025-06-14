@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Threats - Wildlife Diversity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white shadow-xl sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">🌿 Wildlife Portal</h1>
+    <div class="hidden md:flex gap-8 text-lg font-medium">
+      <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+      <a href="species.html" class="hover:text-yellow-300 transition">Species</a>
+      <a href="threats.html" class="hover:text-yellow-300 transition">Threats</a>
+      <a href="conservation.html" class="hover:text-yellow-300 transition">Conservation</a>
+      <a href="contact.html" class="hover:text-yellow-300 transition">Contact</a>
+    </div>
+    <div class="md:hidden">
+      <button onclick="toggleMenu()" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+    <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+    <a href="species.html" class="block py-2 hover:text-yellow-300">Species</a>
+    <a href="threats.html" class="block py-2 hover:text-yellow-300">Threats</a>
+    <a href="conservation.html" class="block py-2 hover:text-yellow-300">Conservation</a>
+    <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="text-center py-10 bg-red-100 shadow-inner">
+  <h2 class="text-4xl font-bold text-red-700">Threats to Wildlife</h2>
+  <p class="text-lg text-gray-600 mt-2">Understanding the challenges that endanger biodiversity</p>
+</header>
+
+<!-- Threat Cards with images -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+  <div class="bg-white rounded-xl shadow-lg p-5 hover:scale-105 transition-transform">
+    <img src="./images/Habitat_Loss.jpg" alt="Habitat Loss" class="rounded mb-2">
+    <h3 class="text-2xl font-bold text-red-700 mb-2">Habitat Loss</h3>
+    <p>Over 60% of India's forest cover has reduced, forcing species to migrate or vanish. Urbanization, mining and agriculture are key culprits.</p>
+  </div>
+  <div class="bg-white rounded-xl shadow-lg p-5 hover:scale-105 transition-transform">
+    <img src="./images/Climate_Change.jpg" alt="Climate Change" class="rounded mb-2">
+    <h3 class="text-2xl font-bold text-red-700 mb-2">Climate Change</h3>
+    <p>Shifts temperature, rainfall patterns, breeding cycles and can alter entire ecosystems, pushing species toward extinction.</p>
+  </div>
+  <div class="bg-white rounded-xl shadow-lg p-5 hover:scale-105 transition-transform">
+    <img src="./images/Poaching & Illegal Trade.jpg" alt="Poaching" class="rounded mb-2">
+    <h3 class="text-2xl font-bold text-red-700 mb-2">Poaching & Illegal Trade</h3>
+    <p>India loses hundreds of endangered animals like tigers, elephants, and pangolins every year to wildlife trafficking and black markets.</p>
+  </div>
+</section>
+
+<!-- Detailed Essay Section -->
+<section class="p-6 max-w-5xl mx-auto">
+  <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">Understanding Threats to Wildlife</h3>
+  <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+    Wildlife across the globe is facing unprecedented threats due to human actions and natural changes. Let’s understand these threats in depth:
+  </p>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">🧭 What are Wildlife Threats?</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>Any activity or phenomenon that puts plant or animal life at risk is a threat.</li>
+    <li>Threats include both direct (hunting) and indirect (climate change) factors.</li>
+  </ul>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">🌍 Major Threats to Wildlife</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li><strong>Habitat Loss:</strong> Due to agriculture, roads, dams, deforestation.</li>
+    <li><strong>Climate Change:</strong> Affects migration, temperature-sensitive species.</li>
+    <li><strong>Pollution:</strong> Plastic, industrial waste, noise, and light pollution.</li>
+    <li><strong>Invasive Species:</strong> Non-native species competing with locals.</li>
+    <li><strong>Poaching and Trade:</strong> For skin, bones, or exotic pet trade.</li>
+  </ul>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">📉 How Threats Affect Wildlife</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>Breaks natural food chains</li>
+    <li>Leads to extinction of rare species</li>
+    <li>Forces animals into human settlements</li>
+    <li>Reduces biodiversity and genetic variety</li>
+  </ul>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">🏛️ Government Actions</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>Wildlife Protection Act 1972</li>
+    <li>Project Tiger, Project Elephant</li>
+    <li>Over 100 National Parks and 500+ Wildlife Sanctuaries</li>
+    <li>Establishment of Eco-sensitive Zones (ESZs)</li>
+    <li>State forest departments & NTCA working on ground</li>
+  </ul>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">🙋 How You and Society Can Help</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>Say no to wildlife products</li>
+    <li>Reduce plastic and carbon use</li>
+    <li>Participate in afforestation drives</li>
+    <li>Volunteer for wildlife organizations</li>
+    <li>Educate peers and promote awareness on social media</li>
+  </ul>
+
+  <h4 class="text-xl font-semibold text-red-600 mt-6 mb-2">📊 Statewise Threats (Examples)</h4>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>Assam – Rhino poaching and floods</li>
+    <li>Madhya Pradesh – Mining and deforestation</li>
+    <li>Kerala – Habitat encroachment and tourism</li>
+    <li>Delhi NCR – Pollution and human-animal conflict</li>
+  </ul>
+</section>
+
+<!-- Table Section -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <h3 class="text-2xl font-bold text-red-700 mb-4">State-wise Wildlife Threat Percentage (Approx.)</h3>
+  <table class="w-full table-auto border border-gray-300">
+    <thead class="bg-green-800 text-white">
+      <tr>
+        <th class="px-4 py-2">State</th>
+        <th class="px-4 py-2">Major Threat</th>
+        <th class="px-4 py-2">% of Impact</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white text-center">
+      <tr><td>Madhya Pradesh</td><td>Deforestation</td><td>42%</td></tr>
+      <tr><td>Assam</td><td>Floods & Poaching</td><td>38%</td></tr>
+      <tr><td>Uttarakhand</td><td>Forest Fires</td><td>31%</td></tr>
+      <tr><td>Karnataka</td><td>Urbanization</td><td>27%</td></tr>
+      <tr><td>Rajasthan</td><td>Water Scarcity</td><td>22%</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Chart.js Integration -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<section class="p-6 max-w-6xl mx-auto">
+  <h3 class="text-2xl font-bold text-gray-800 mb-4">Interactive Threat Chart</h3>
+  <label class="text-lg font-medium">Select Threat Type:</label>
+  <select id="threatType" class="ml-2 mb-4 p-2 border rounded">
+    <option value="deforestation">Deforestation</option>
+    <option value="poaching">Poaching</option>
+    <option value="pollution">Pollution</option>
+    <option value="urbanization">Urbanization</option>
+  </select>
+  <canvas id="threatChart" class="w-full max-w-4xl mx-auto"></canvas>
+</section>
+
+<script>
+  const chartData = {
+    deforestation: { labels: ["MP", "Chhattisgarh", "Odisha", "Jharkhand"], data: [42, 38, 34, 31] },
+    poaching: { labels: ["Assam", "Uttarakhand", "WB", "Nagaland"], data: [35, 30, 26, 23] },
+    pollution: { labels: ["Delhi", "Punjab", "Maharashtra", "Gujarat"], data: [45, 38, 34, 30] },
+    urbanization: { labels: ["Karnataka", "TN", "Telangana", "AP"], data: [27, 25, 22, 20] }
+  };
+
+  const ctx = document.getElementById("threatChart").getContext("2d");
+  let threatChart;
+
+  function drawChart(type) {
+    if (threatChart) threatChart.destroy();
+    const data = chartData[type];
+
+    threatChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: data.labels,
+        datasets: [{
+          label: `${type.toUpperCase()} Threat (%)`,
+          data: data.data,
+          backgroundColor: 'rgba(239, 68, 68, 0.7)',
+          borderColor: 'rgba(239, 68, 68, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Impact %' }
+          }
+        }
+      }
+    });
+  }
+
+  drawChart('deforestation');
+  document.getElementById('threatType').addEventListener('change', e => drawChart(e.target.value));
+</script>
+
+<!-- Footer -->
+<footer class="bg-green-800 text-white text-center p-4 mt-8">
+  &copy; 2025 Wildlife Diversity Portal | Designed by Chandan Kumar
+</footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarus Crane - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Sarus Crane - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Sarus Crane (<em>Antigone antigone</em>) is the world’s tallest flying bird and a majestic symbol of grace and elegance. Known for its towering height, long legs, and striking red head, the Sarus Crane is an iconic species in Indian wetlands and farmlands. Revered in Indian culture and often associated with lifelong devotion, these cranes form strong monogamous pairs and are commonly seen performing synchronized courtship dances. Their beauty and symbolism have earned them a special place in the hearts of rural communities and conservationists alike.
+        <br><br>
+        Sarus Cranes are found across parts of the Indian subcontinent, Southeast Asia, and Australia. In India, they are particularly prominent in Uttar Pradesh, Madhya Pradesh, Rajasthan, and Gujarat. Despite their revered status, Sarus Cranes face threats from habitat loss, agricultural expansion, and water pollution. However, through a combination of community participation and wetland protection, India has made progress in protecting these magnificent birds. They are listed as vulnerable by the IUCN and are protected under the Wildlife Protection Act of India.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Sarus Crane belongs to the Gruidae family and is scientifically classified as follows:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Aves</li>
+          <li><strong>Order:</strong> Gruiformes</li>
+          <li><strong>Family:</strong> Gruidae</li>
+          <li><strong>Genus:</strong> Antigone</li>
+          <li><strong>Species:</strong> A. antigone</li>
+        </ul>
+        The Sarus Crane thrives in wetland ecosystems including marshes, rice paddies, shallow lakes, and floodplains. In India, they prefer areas with a mix of open water, vegetation, and agricultural land. Their strong presence in human-modified landscapes makes them a rare example of wildlife coexisting with agriculture. Sarus Cranes are known to nest in fields, often with farmers actively protecting the nests. These birds are non-migratory and highly territorial, staying in the same region year-round if undisturbed.
+      </p>
+    </section>
+
+    <!-- About Sarus Crane -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">About the Sarus Crane</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/sarus-crane.jpg"
+               alt="Sarus Crane"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Sarus Crane is easily recognized by its long neck, pale grey body, and vibrant red skin covering its head and upper neck. Adults can grow up to 1.8 meters tall, making them the tallest of all flying birds. They are known for their deep, resonant calls that can be heard over long distances and their elegant dance rituals, which involve leaping, bowing, and wing flapping—behaviors thought to strengthen pair bonds. These birds are usually seen in pairs or small family groups.
+            <br><br>
+            Sarus Cranes are omnivorous and feed on a variety of food including aquatic plants, tubers, grains, insects, and small vertebrates. They build large nests from wetland vegetation, often laying two eggs which are cared for by both parents. Their life-long pair bonding and mutual care of young symbolize harmony and fidelity, traits that have made them revered in Indian folklore. These birds can live up to 30-40 years in the wild if not disturbed by human interference or habitat degradation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- State-wise Presence in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        In India, the Sarus Crane is most commonly found in the Gangetic floodplains, especially in:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Uttar Pradesh:</strong> Highest population, particularly in Etawah, Mainpuri, and Aligarh districts</li>
+          <li><strong>Madhya Pradesh:</strong> Wetlands and agricultural zones around Chambal and Narmada rivers</li>
+          <li><strong>Rajasthan:</strong> Keoladeo National Park and Bharatpur wetlands</li>
+          <li><strong>Gujarat:</strong> Nalsarovar and Little Rann of Kutch</li>
+        </ul>
+        Sarus Cranes are often seen nesting in paddy fields and marshes near villages. Their presence is seen as a sign of a healthy wetland ecosystem. In some regions, they are known to follow traditional irrigation patterns and seasonal crop cycles, adapting their nesting behavior accordingly. Their ability to coexist with farming makes them a unique ambassador for wetland-agriculture conservation partnerships in India.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        Although legally protected, Sarus Cranes face multiple threats such as habitat loss due to conversion of wetlands into urban or industrial areas, draining of water bodies, pesticide exposure, and disturbances during breeding season. Changing agricultural practices and mechanized farming reduce nesting success. In some areas, they are also vulnerable to electrocution from power lines or being killed by feral dogs.
+        <br><br>
+        Conservation strategies include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Protection and restoration of natural wetlands and marshes</li>
+          <li>Community-based nest monitoring and farming partnership programs</li>
+          <li>Educational campaigns to raise awareness about Sarus behavior</li>
+          <li>Reduction of pesticide use and safer agricultural practices</li>
+          <li>Installation of bird diverters on electric lines near crane habitats</li>
+        </ul>
+        The Sarus Crane has become a symbol of peaceful coexistence between people and nature. Many local farmers act as stewards, ensuring the birds are protected during breeding seasons. Government-backed conservation efforts are increasingly involving local stakeholders to ensure the long-term survival of this species.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Sarus Crane is more than just a bird; it is a living heritage of Indian wetlands and a cultural icon of fidelity and harmony. As urbanization and climate change threaten its delicate ecosystem, the responsibility falls on us to act decisively. From farmers to forest officers, from students to scientists, everyone has a role to play in ensuring the continued survival of this elegant giant. Through conservation, education, and respectful coexistence, we can ensure that the majestic Sarus Crane continues to grace our skies for generations to come.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

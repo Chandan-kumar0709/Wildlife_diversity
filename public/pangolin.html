@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Pangolin - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-900 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Pangolins of India - Focus on Indian Pangolin</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        Pangolins, often referred to as "scaly anteaters", are among the most unique and elusive mammals in the world. Covered in hard, overlapping scales made of keratin, they are the only mammals entirely protected by such armor. Pangolins are solitary, nocturnal, and primarily feed on ants and termites using their long, sticky tongues. They are found in Asia and Africa and are currently the most trafficked mammals globally, owing to the demand for their scales and meat.
+        <br><br>
+        In India, two species are found: the Indian Pangolin and the Chinese Pangolin. Both species are protected under the Wildlife (Protection) Act, 1972 and are listed in CITES Appendix I. These gentle creatures play a crucial role in pest control by consuming thousands of insects each night, thus maintaining ecological balance.
+      </p>
+    </section>
+
+    <!-- Types of Pangolins -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Types of Pangolins</h2>
+      <p class="text-lg leading-relaxed">
+        There are eight recognized species of pangolins in the world. Four are found in Asia and four in Africa. The Asian species include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Indian Pangolin (*Manis crassicaudata*)</li>
+          <li>Chinese Pangolin (*Manis pentadactyla*)</li>
+          <li>Malayan Pangolin (*Manis javanica*)</li>
+          <li>Palawan Pangolin (*Manis culionensis*)</li>
+        </ul>
+        Among these, the Indian Pangolin is most commonly found in India and is the largest Asian species. It is distinguishable by its large, overlapping scales and elongated snout. Each species is adapted to different forest and savanna habitats, with some even dwelling in semi-arid regions.
+      </p>
+    </section>
+
+    <!-- Indian Pangolin Section -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">The Indian Pangolin</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/Pangolin.jpg"
+               alt="Indian Pangolin"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Indian Pangolin (*Manis crassicaudata*) is a terrestrial mammal found across the Indian subcontinent. It prefers habitats ranging from grasslands, dry deciduous forests to rocky hill terrains and agricultural areas. This species is covered in 11–13 rows of dark brown keratin scales that act as armor against predators. When threatened, it curls up into a tight ball, making it almost impossible to be harmed. Indian Pangolins have poor eyesight but an excellent sense of smell, which helps them locate insect colonies.
+            <br><br>
+            These animals dig deep burrows and spend most of their time underground. They are solitary by nature and have very low reproductive rates, making their population recovery extremely slow once exploited. Their diet consists exclusively of ants and termites, which they lap up with their long, sticky tongues. The Indian Pangolin plays a vital ecological role by controlling pest populations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habitat and Distribution -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Habitat and State-wise Presence</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Pangolin is widely distributed across the Indian subcontinent, including India, Nepal, Sri Lanka, and parts of Pakistan. In India, it is found in:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Madhya Pradesh</li>
+          <li>Maharashtra</li>
+          <li>Chhattisgarh</li>
+          <li>Jharkhand</li>
+          <li>Odisha</li>
+          <li>Tamil Nadu</li>
+          <li>Andhra Pradesh</li>
+          <li>West Bengal</li>
+          <li>Uttarakhand and others</li>
+        </ul>
+        They adapt to various habitats but are most commonly observed in dry deciduous forests, scrublands, and areas with a good supply of ant hills and termite mounds. Human encroachment, habitat loss, and hunting have significantly affected their range and visibility.
+      </p>
+    </section>
+
+    <!-- Conservation Efforts -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conservation and Threats</h2>
+      <p class="text-lg leading-relaxed">
+        Indian Pangolins are listed as “Endangered” by the IUCN due to rampant poaching and habitat destruction. The biggest threat to pangolins comes from illegal wildlife trade. Their scales are falsely believed to have medicinal properties, and their meat is considered a delicacy in some cultures. In India, the species is protected under Schedule I of the Wildlife Protection Act, 1972.
+        <br><br>
+        Numerous initiatives have been taken by forest departments, NGOs, and global conservation agencies to protect pangolins. Awareness campaigns, rescue and release operations, habitat preservation, and tracking of wildlife trafficking are some of the key steps. The Wildlife Crime Control Bureau (WCCB) in India actively monitors and seizes illegal pangolin shipments.
+        <br><br>
+        It is crucial to recognize the importance of pangolins in our ecosystem. The more we educate communities and enforce laws, the better we can ensure the survival of this shy, scaly guardian of nature.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Pangolin stands as a symbol of evolutionary marvel and ecological importance. Its silent role in pest control, soil aeration, and ecosystem stability often goes unnoticed. As one of the most trafficked mammals in the world, it is our responsibility to speak up for the voiceless. With better protection, conservation awareness, and strict enforcement of laws, we can prevent the extinction of this fascinating creature. Together, let us celebrate the Indian Pangolin and contribute to its survival.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- JavaScript for fade-up effect -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

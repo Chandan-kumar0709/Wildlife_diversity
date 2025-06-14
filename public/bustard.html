@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Great Indian Bustard - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-yellow-900 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Great Indian Bustard - Conservation & Awareness</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Great Indian Bustard (*Ardeotis nigriceps*) is one of the heaviest flying birds in the world and one of the rarest birds native to the Indian subcontinent. Once widespread across the grasslands of India, it is now critically endangered, with fewer than 200 individuals left in the wild. The bustard is a symbol of India’s vanishing grasslands and a flagship species for their conservation.
+        <br><br>
+        Known for its majestic appearance, long legs, and strong upright stance, the Great Indian Bustard represents both ecological significance and conservation urgency. Its decline has been caused by habitat loss, poaching, and collision with power lines. This bird now acts as a poignant reminder of the fragile balance of our natural ecosystems.
+      </p>
+    </section>
+
+    <!-- Types of Bustards -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Types of Bustards</h2>
+      <p class="text-lg leading-relaxed">
+        Bustards are large, terrestrial birds found in dry grasslands and open plains. Globally, there are over 20 recognized species. In India, the key species include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Great Indian Bustard (*Ardeotis nigriceps*)</li>
+          <li>Lesser Florican (*Sypheotides indicus*)</li>
+          <li>Bengal Florican (*Houbaropsis bengalensis*)</li>
+        </ul>
+        Among these, the Great Indian Bustard is the most iconic and also the most threatened. Bustards are omnivorous, feeding on seeds, insects, and small reptiles. They rely on open habitats to nest and breed, which makes them highly susceptible to human interference.
+      </p>
+    </section>
+
+    <!-- Great Indian Bustard Section -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">The Great Indian Bustard</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/great-indian-bustard.jpg"
+               alt="Great Indian Bustard"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Great Indian Bustard is a tall bird, standing up to 1 meter in height, with a wingspan of over 2 meters. Males are larger and heavier than females, with a distinctive black crown on the head and a contrasting white neck and underparts. The plumage blends well with dry grasslands, providing natural camouflage.
+            <br><br>
+            This bird is known for its elaborate courtship displays where the male inflates a throat pouch to produce deep booming calls. It breeds on open, flat grasslands and lays a single egg on bare ground. With low reproductive rates and high mortality due to external threats, population recovery is extremely slow.
+            <br><br>
+            Its diet includes grass seeds, beetles, locusts, and even small rodents or reptiles. The bustard contributes to the ecological balance by controlling insect populations and supporting seed dispersal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habitat and Distribution -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Habitat and State-wise Presence</h2>
+      <p class="text-lg leading-relaxed">
+        The Great Indian Bustard historically ranged across India and parts of Pakistan. Today, its primary habitat is limited to a few protected areas and grasslands. The states where it is currently found include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Rajasthan (Desert National Park)</li>
+          <li>Gujarat (Kutch region)</li>
+          <li>Maharashtra (Nannaj Grasslands)</li>
+          <li>Madhya Pradesh</li>
+          <li>Karnataka (Ballari region)</li>
+          <li>Andhra Pradesh (Rollapadu Sanctuary)</li>
+        </ul>
+        The bustard’s preferred habitats are semi-arid grasslands, scrub deserts, and dry plains. Rapid urbanization, conversion to agriculture, infrastructure development, and power lines have significantly fragmented and reduced these habitats.
+      </p>
+    </section>
+
+    <!-- Conservation Efforts -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Conservation and Threats</h2>
+      <p class="text-lg leading-relaxed">
+        The Great Indian Bustard is listed as “Critically Endangered” on the IUCN Red List. Only around 150 individuals remain in the wild. Major threats include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Collision with overhead power lines</li>
+          <li>Poaching and egg theft</li>
+          <li>Loss of grassland habitat</li>
+          <li>Disturbance from farming and infrastructure</li>
+        </ul>
+        Conservation efforts include the "Bustard Recovery Programme" initiated by the Indian government. A conservation breeding center has been established in Rajasthan. Solar power lines are being buried underground in some areas to prevent collisions.
+        <br><br>
+        NGOs, researchers, and wildlife departments are working together on satellite tagging, community education, and habitat restoration. The bustard is also part of India’s list of species for high-priority conservation under the Wildlife Protection Act.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Great Indian Bustard is not just a bird but a symbol of India’s rich yet fragile grassland ecosystem. Saving this species means saving entire habitats and countless other organisms that share its environment. Its story reminds us of the importance of coexistence and sustainable development. With timely action, community support, and scientific guidance, we still have a chance to ensure the skies of Rajasthan and Gujarat continue to echo the thunderous calls of this majestic bird.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-900 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- JavaScript for fade-up animation -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

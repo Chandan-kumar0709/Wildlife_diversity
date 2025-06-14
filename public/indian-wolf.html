@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Wolf - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Indian Wolf - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Wolf (<em>Canis lupus pallipes</em>) is a distinct and fascinating subspecies of the grey wolf, native to the semi-arid and grassland regions of the Indian subcontinent. Unlike its northern cousins, the Indian Wolf is relatively smaller, slender in build, and has a short, dense coat that helps it adapt to warmer climates. This elusive predator has a critical ecological role as a top carnivore and is an important symbol of India’s vanishing grassland ecosystems. Despite being less known than tigers or elephants, the Indian Wolf is a vital part of India's biodiversity and deserves focused conservation efforts.
+        <br><br>
+        The Indian Wolf is known for its high intelligence, keen senses, and remarkable ability to survive in harsh, dry environments. It is primarily nocturnal, living in pairs or small packs. Over centuries, the Indian Wolf has developed complex social behaviors and communication methods, including body language, scent marking, and vocalizations like howling. However, due to human-wildlife conflict, habitat fragmentation, and misunderstanding, the Indian Wolf faces increasing threats and is classified as endangered in several parts of India.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Wolf is a subspecies of the grey wolf and belongs to the family Canidae. Here is its scientific classification:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Mammalia</li>
+          <li><strong>Order:</strong> Carnivora</li>
+          <li><strong>Family:</strong> Canidae</li>
+          <li><strong>Genus:</strong> Canis</li>
+          <li><strong>Species:</strong> Canis lupus</li>
+          <li><strong>Subspecies:</strong> Canis lupus pallipes</li>
+        </ul>
+        The Indian Wolf prefers dry scrublands, grasslands, and open semi-arid habitats over dense forests. These areas are often devoid of trees and have sparse human populations, which help wolves move freely and hunt. Unlike wolves in colder regions that rely heavily on large prey, the Indian Wolf survives on small to medium-sized animals such as rodents, hares, birds, and livestock. This adaptability allows it to survive in regions with extreme temperatures and low water availability. Unfortunately, the same open landscapes that support wolves are rapidly being converted into agricultural land or lost to urbanization.
+      </p>
+    </section>
+
+    <!-- About Indian Wolf -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">About the Indian Wolf</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/indian-wolf.jpg"
+               alt="Indian Wolf"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Indian Wolf is characterized by its reddish-brown fur, lean body, and relatively smaller size compared to other wolf species. Males typically weigh between 20–30 kg and females slightly less. They have long legs and a narrow snout, which helps them move swiftly through open plains. Indian Wolves do not typically form large packs like Arctic wolves. Instead, they live in nuclear families or small groups with strong social bonds and cooperative hunting strategies.
+            <br><br>
+            These wolves are opportunistic feeders and often scavenge for food. They are also known for preying on young or unattended livestock, which sometimes brings them into conflict with local communities. However, studies suggest that wolves help maintain ecological balance by controlling herbivore populations. Indian Wolves communicate through howls that serve as territory markers or group coordination tools. They breed during winter, with a gestation period of around 60–63 days. The female gives birth to 3–5 pups in a secluded den, and both parents take part in nurturing the young.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- State-wise Presence in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Wolf is primarily found in peninsular and central India. States that have a significant population include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Madhya Pradesh:</strong> Forests of Kuno and Nauradehi</li>
+          <li><strong>Maharashtra:</strong> Grasslands in Nagpur, Nashik, and Solapur</li>
+          <li><strong>Gujarat:</strong> Little Rann of Kutch and Banni grasslands</li>
+          <li><strong>Rajasthan:</strong> Desert fringes and dry scrublands</li>
+          <li><strong>Karnataka:</strong> Open plains and Deccan plateau</li>
+          <li><strong>Telangana:</strong> Grassland and hill regions</li>
+        </ul>
+        These wolves avoid dense forests and high-altitude zones, preferring areas that offer visibility and space for hunting. Conservationists have noted a decline in wolf habitats due to increased human encroachment and lack of protected grassland areas. Their fragmented populations make them vulnerable to genetic bottlenecks and localized extinction. Many regions still lack proper data and monitoring on wolf populations, making it difficult to draft long-term protection plans.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Wolf is under constant threat from habitat degradation, retaliatory killings, and lack of awareness. Some of the key challenges include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Conversion of grasslands to farmlands and solar farms</li>
+          <li>Persecution by villagers due to livestock depredation</li>
+          <li>Low visibility in media and conservation policies</li>
+          <li>Road kills and infrastructure fragmentation</li>
+          <li>Genetic isolation of small wolf populations</li>
+        </ul>
+        Conservation efforts are underway in a few regions through wildlife NGOs and state forest departments. Initiatives include compensation schemes for livestock loss, education of local communities, habitat identification, and buffer zone creation. There is also a need to formally recognize and protect grasslands under India’s ecosystem conservation policies. Protecting the Indian Wolf requires a combination of ecological science, public support, and sustainable land-use planning.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Wolf, with its silent but crucial presence in India’s open lands, deserves as much attention as its more celebrated cousins in the animal kingdom. As grasslands shrink and conflict increases, we are at risk of losing this ancient and majestic predator forever. The Indian Wolf is a survivor, a hunter, and a symbol of India’s wild and diverse heritage. It is time that we shift focus towards preserving these lesser-known yet ecologically essential creatures. Through informed conservation, supportive communities, and inclusive environmental policies, the howl of the Indian Wolf can continue to echo across our lands for generations to come.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

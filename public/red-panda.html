@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Panda - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-lime-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-red-800 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Red Panda - Conservation & Habitat</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Red Panda (*Ailurus fulgens*), also known as the "fire fox," is a small mammal native to the eastern Himalayas and southwestern China. Despite its name, it is not closely related to the giant panda. Instead, it belongs to its own unique family, Ailuridae. Known for its reddish-brown fur, long bushy tail, and waddling gait due to shorter front legs, the Red Panda is a charismatic and elusive species.
+        <br><br>
+        With a shy and solitary nature, this tree-dwelling mammal plays a crucial role in the mountain ecosystems of Asia. Sadly, its population is dwindling due to habitat destruction, fragmentation, and poaching. The Red Panda is currently listed as “Endangered” on the IUCN Red List and is a focus of many global conservation efforts.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Red Panda is the only living member of its genus and family. Its classification is as follows:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Mammalia</li>
+          <li><strong>Order:</strong> Carnivora</li>
+          <li><strong>Family:</strong> Ailuridae</li>
+          <li><strong>Genus:</strong> Ailurus</li>
+          <li><strong>Species:</strong> A. fulgens</li>
+        </ul>
+        Red Pandas inhabit temperate forests of the Himalayas, typically at elevations between 2,200 and 4,800 meters. They prefer areas with dense bamboo undergrowth, which forms a major part of their diet. Their range includes:
+        <br>
+        <strong>India</strong> (Sikkim, Arunachal Pradesh, West Bengal), <strong>Nepal</strong>, <strong>Bhutan</strong>, <strong>Myanmar</strong>, and <strong>China</strong>.
+      </p>
+    </section>
+
+    <!-- About Red Panda -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">The Red Panda</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/red-panda.jpg"
+               alt="Red Panda"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Red Panda is a small, arboreal mammal with reddish-brown fur and a distinctive long, bushy tail with ring markings. It has a white face with tear-like eye markings and a short, black snout. These physical traits provide excellent camouflage in their forested environments.
+            <br><br>
+            They are crepuscular, being most active during dawn and dusk, and primarily eat bamboo, although they also consume berries, acorns, insects, and small rodents. Red Pandas are skilled climbers and spend most of their time in trees. They use their tail for balance and insulation in cold temperatures.
+            <br><br>
+            Red Pandas are shy and territorial animals. They mark territory using scent glands and communicate through whistles and squeals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribution in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        In India, the Red Panda is primarily found in the Eastern Himalayan region. The key states include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Sikkim – Khangchendzonga National Park</li>
+          <li>Arunachal Pradesh – Namdapha National Park</li>
+          <li>West Bengal – Singalila and Neora Valley National Parks</li>
+        </ul>
+        These regions offer high-altitude, moist-temperate forests with abundant bamboo—perfect for Red Panda habitation. Conservation efforts in these areas are critical, given the shrinking range and habitat degradation caused by logging, agriculture, and climate change.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        The Red Panda is facing numerous threats in the wild:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Deforestation and habitat loss due to agriculture and development</li>
+          <li>Poaching for fur and illegal pet trade</li>
+          <li>Inbreeding and fragmentation of populations</li>
+          <li>Climate change affecting bamboo availability</li>
+        </ul>
+        Conservation efforts include the Red Panda Network’s initiatives, habitat restoration, anti-poaching measures, and captive breeding programs. India also celebrates Red Panda Day annually to raise awareness. These conservation actions, coupled with community-based eco-tourism and habitat corridors, are vital to saving the species.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-red-700 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Red Panda is more than a charismatic mammal — it is a critical component of the Eastern Himalayan ecosystem. Its gentle nature and ecological role in forest regeneration make it a species worth protecting. With committed conservation action, habitat protection, and public awareness, we can ensure this 'fire fox' continues to thrive in the misty hills of India and beyond.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-red-800 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

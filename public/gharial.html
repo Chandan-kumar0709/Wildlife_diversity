@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Gharial - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-900 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Indian Gharial - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Gharial (*Gavialis gangeticus*), also known as the Indian Gharial, is one of the longest and most uniquely shaped crocodilian species in the world. Characterized by its long, narrow snout and distinctive bulbous growth on adult males, the gharial is a critically endangered reptile found in the river systems of the Indian subcontinent. Its name comes from the Hindi word "ghara," referring to the pot-like bump on its snout.
+        <br><br>
+        Gharials are fish-eating specialists and have evolved streamlined jaws that allow them to swiftly snap up aquatic prey. Despite their prehistoric appearance and massive size, gharials are non-aggressive toward humans and are vital to river ecosystems.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        Gharials are members of the Crocodylia order and are classified as follows:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Reptilia</li>
+          <li><strong>Order:</strong> Crocodylia</li>
+          <li><strong>Family:</strong> Gavialidae</li>
+          <li><strong>Genus:</strong> Gavialis</li>
+          <li><strong>Species:</strong> G. gangeticus</li>
+        </ul>
+        Gharials inhabit deep, fast-flowing rivers with high fish populations. Historically found in the Indus, Ganges, Brahmaputra, and Mahanadi river systems, their range has drastically reduced. Today, their primary habitats are limited to parts of India and Nepal, with sanctuaries established in specific regions to support population recovery.
+      </p>
+    </section>
+
+    <!-- About Indian Gharial -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">About the Indian Gharial</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/gharial.jpg"
+               alt="Indian Gharial"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Indian Gharial can grow up to 6 meters in length, with males generally larger than females. Their most striking feature is the thin, elongated snout lined with interlocking sharp teeth, ideal for catching slippery fish. Males develop a ghara (a nasal appendage) on the snout, used in mating rituals and sound production.
+            <br><br>
+            Gharials are shy reptiles, spending most of their time in water and basking on sandy banks. Unlike crocodiles, they are poorly equipped for walking on land due to their weak limbs, and prefer staying in aquatic environments. They are diurnal and are rarely seen far from the rivers they call home.
+            <br><br>
+            These reptiles lay eggs in holes dug into sandy banks. The mother guards the nest but does not assist hatchlings into the water as crocodiles do. Hatchlings are independent from birth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribution in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        Indian Gharials are now found primarily in:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Chambal River (Uttar Pradesh, Madhya Pradesh, Rajasthan)</li>
+          <li>Gandak River (Bihar)</li>
+          <li>Son River and Mahanadi River</li>
+          <li>Parts of the Ganges in isolated stretches</li>
+        </ul>
+        The **National Chambal Sanctuary** is the most critical site for gharial conservation. Other efforts in Bihar and Odisha aim to reintroduce captive-bred gharials into natural habitats. These efforts are crucial to restore breeding populations and ensure genetic diversity.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        Gharials are listed as *Critically Endangered* on the IUCN Red List. Their population has dropped by over 98% in the last century due to:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Loss of nesting habitats due to sand mining and dam construction</li>
+          <li>Pollution and decrease in fish populations</li>
+          <li>Entanglement in fishing nets and poaching</li>
+          <li>Human encroachment and riverfront development</li>
+        </ul>
+        The Indian government, along with conservation organizations, has initiated captive breeding programs and habitat protection measures. Sanctuaries and awareness drives are helping reduce fear and improve community involvement in protecting the gharial.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Gharial is one of the most evolutionarily distinct and endangered reptiles on the planet. As a guardian of India’s river ecosystems, it plays a vital ecological role that must not be overlooked. With combined efforts of the government, conservationists, and local communities, we can ensure that this incredible species continues to thrive in its natural habitat. Education and proactive conservation are the keys to saving the Indian Gharial from the brink of extinction.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

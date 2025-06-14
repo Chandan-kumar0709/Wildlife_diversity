@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fishing Cat - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Fishing Cat - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Fishing Cat (<em>Prionailurus viverrinus</em>) is a medium-sized wild cat species, specially adapted for wetland life. It is native to South and Southeast Asia and is found in India, Bangladesh, Sri Lanka, and Nepal. The Fishing Cat stands out due to its unique lifestyle and preference for habitats near water bodies. Unlike most other cats that avoid water, the Fishing Cat is a skilled swimmer and is known for catching fish with remarkable precision. It has partially webbed feet that assist in navigating marshy environments, and its diet consists mainly of fish, frogs, crustaceans, and occasionally birds or rodents.
+        <br><br>
+        In India, the Fishing Cat has been identified as the state animal of West Bengal and is considered a vulnerable species due to the ongoing destruction of its freshwater habitats. The Fishing Cat plays a critical role in the ecosystem by maintaining balance in aquatic life populations and serving as a bioindicator of wetland health. Despite its importance, it remains poorly understood and often confused with domestic cats by local communities, leading to a lack of conservation urgency.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        The Fishing Cat is part of the Felidae family and shares a common ancestor with other small wild cats. It is closely related to the Leopard Cat but has unique adaptations that set it apart. Here is its classification:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Mammalia</li>
+          <li><strong>Order:</strong> Carnivora</li>
+          <li><strong>Family:</strong> Felidae</li>
+          <li><strong>Genus:</strong> Prionailurus</li>
+          <li><strong>Species:</strong> Prionailurus viverrinus</li>
+        </ul>
+        Fishing Cats prefer wetlands, marshes, mangroves, riverbanks, swamps, and oxbow lakes. In India, they are mostly found in the Ganges-Brahmaputra delta, the Terai region, and the mangrove forests of Sundarbans. They rely heavily on dense vegetation for cover and water bodies for hunting. However, due to habitat loss caused by development, pollution, and agriculture, these critical ecosystems are shrinking rapidly. Their presence is often an indicator of healthy wetlands, making them ecologically significant beyond their size or numbers.
+      </p>
+    </section>
+
+    <!-- About the Fishing Cat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">About the Fishing Cat</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/fishing-cat.jpg"
+               alt="Fishing Cat"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            Fishing Cats are robust and muscular cats with a stocky build. They typically weigh between 5–16 kg and have a body length of 70–90 cm. Their greyish olive coat is marked with dark spots and stripes, and they possess a broad face, short legs, and a short tail. One of their key adaptations is their partially webbed feet which help them navigate muddy terrain and swim efficiently. Fishing Cats are solitary and primarily nocturnal. They are excellent swimmers and have been observed diving into water to catch prey.
+            <br><br>
+            These cats are quiet and elusive, making sightings rare. They often stalk the edges of water bodies and use their sharp claws to scoop out fish. Sometimes they tap the surface of the water to imitate insect movements, luring fish within reach. Mating typically occurs during winter, with females giving birth to two or three kittens. Cubs stay with the mother until they can hunt on their own. Their elusive nature, combined with the loss of wetlands, poses a significant challenge to studying and conserving this species.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presence in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        In India, the Fishing Cat is mainly found in the eastern and northeastern states where wetland ecosystems are more prevalent. States with confirmed populations include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>West Bengal:</strong> Sundarbans mangrove forests, state animal</li>
+          <li><strong>Odisha:</strong> Chilika Lake wetlands</li>
+          <li><strong>Assam:</strong> Brahmaputra floodplains</li>
+          <li><strong>Bihar:</strong> Koshi and Gandak wetlands</li>
+          <li><strong>Uttar Pradesh:</strong> Terai belt and Ganga basin</li>
+          <li><strong>Andhra Pradesh:</strong> Krishna mangroves</li>
+        </ul>
+        These habitats are crucial for the species’ survival, but most of them are under threat due to land reclamation, pollution, and unsustainable development. The lack of awareness about this cat has also resulted in their being killed due to mistaken identity or persecution. Their secretive behavior adds to the difficulty of tracking population trends, making conservation strategies all the more challenging.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        Fishing Cats are listed as Vulnerable on the IUCN Red List due to their declining population. Major threats include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Loss of wetland habitats due to urban expansion and agriculture</li>
+          <li>Pollution and eutrophication of water bodies</li>
+          <li>Hunting and poaching due to mistaken identity with leopards</li>
+          <li>Road kills due to increasing vehicular access to wetland zones</li>
+          <li>Human-wildlife conflict and retaliatory killings</li>
+        </ul>
+        Several NGOs and conservationists in India are working to protect the Fishing Cat through awareness campaigns, research, and habitat restoration. The Fishing Cat Project in West Bengal is one such initiative aimed at reducing conflict, educating communities, and promoting eco-sensitive planning. There is also a need for state governments to declare and protect wetlands as conservation reserves. The survival of the Fishing Cat is closely linked to the fate of India’s disappearing wetlands.
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Fishing Cat, with its remarkable aquatic lifestyle and mysterious presence, is a jewel of India’s wildlife heritage. As a keystone species of wetland ecosystems, its protection is crucial not just for its own survival but also for the health of rivers, lakes, and marshes across the country. Awareness about the Fishing Cat is growing, but much more remains to be done. Conservation must be rooted in habitat protection, scientific research, and community participation. With dedicated effort and wise planning, the stealthy splash of the Fishing Cat can continue to ripple across India’s wetlands, echoing a story of coexistence and resilience.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

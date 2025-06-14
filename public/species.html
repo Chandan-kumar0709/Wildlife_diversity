@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Species - Wildlife Diversity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="js/species.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .cate a{
+    text-decoration: underline;
+   
+  }
+  </style>
+  <script>
+    // Navbar toggle
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+  <script src="./js/species_cat.js"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Responsive Animated Navbar -->
+  <nav class="bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white shadow-xl sticky top-0 z-50 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold flex items-center gap-2">🌿 Wildlife Portal</h1>
+      <div class="hidden md:flex gap-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a>
+        <a href="species.html" class="hover:text-yellow-300 transition duration-300">Species</a>
+        <a href="threats.html" class="hover:text-yellow-300 transition duration-300">Threats</a>
+        <a href="conservation.html" class="hover:text-yellow-300 transition duration-300">Conservation</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition duration-300">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+      <a href="species.html" class="block py-2 hover:text-yellow-300">Species</a>
+      <a href="threats.html" class="block py-2 hover:text-yellow-300">Threats</a>
+      <a href="conservation.html" class="block py-2 hover:text-yellow-300">Conservation</a>
+      <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-10 bg-green-100 shadow-inner">
+    <h2 class="text-4xl font-bold text-green-800">Wildlife Species</h2>
+    <p class="text-lg text-gray-600 mt-2">Explore our catalog of fascinating species</p>
+  </header>
+<!-- Main Species Grid -->
+  <section class="p-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Keep your existing 20 species cards here -->
+      <!-- No changes to existing species image cards -->
+    </div>
+  </section>
+
+  <!-- Species Categories -->
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">Species Categories</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-green-700" class="cate"><a href="https://en.wikipedia.org/wiki/Mammal" target="_blank" >Mammals</a></h3>
+        <p class="mt-2 text-gray-600">India is home to Bengal Tigers, Asiatic Lions, Indian Elephants, and Leopards. Over 410 species of mammals are found in various forests and sanctuaries.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-green-700" class="cate"><a href="https://en.wikipedia.org/wiki/Bird" target="_blank">Birds</a></h3>
+        <p class="mt-2 text-gray-600">With over 1300 species, India is a haven for birdwatchers. Major species include the Indian Peafowl, Great Indian Bustard, and Hornbills.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-green-700" class="cate"><a href="https://en.wikipedia.org/wiki/Reptile" target="_blank">Reptiles</a> &nbsp;&nbsp; & &nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/Amphibian" target="_blank">Amphibians</a></h3>
+        <p class="mt-2 text-gray-600">India supports a wide range of reptiles like King Cobras, Gharials, and turtles. There are over 500 species of reptiles and amphibians combined.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statewise Statistics Table -->
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">Statewise Wildlife Species Count</h2>
+    <div class="overflow-x-auto rounded-lg shadow">
+      <table class="min-w-full text-left text-sm text-gray-600 border">
+        <thead class="bg-green-700 text-white text-sm uppercase">
+          <tr>
+            <th class="p-4">State</th>
+            <th class="p-4">Total Species</th>
+            <th class="p-4">Mammals</th>
+            <th class="p-4">Birds</th>
+            <th class="p-4">Reptiles</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr class="hover:bg-gray-100 transition">
+            <td class="p-4 font-medium">Madhya Pradesh</td>
+            <td class="p-4">500+</td>
+            <td class="p-4">110</td>
+            <td class="p-4">290</td>
+            <td class="p-4">100</td>
+          </tr>
+          <tr class="hover:bg-gray-100 transition">
+            <td class="p-4 font-medium">Karnataka</td>
+            <td class="p-4">470+</td>
+            <td class="p-4">105</td>
+            <td class="p-4">260</td>
+            <td class="p-4">90</td>
+          </tr>
+          <tr class="hover:bg-gray-100 transition">
+            <td class="p-4 font-medium">Assam</td>
+            <td class="p-4">450+</td>
+            <td class="p-4">95</td>
+            <td class="p-4">280</td>
+            <td class="p-4">75</td>
+          </tr>
+          <tr class="hover:bg-gray-100 transition">
+            <td class="p-4 font-medium">Uttarakhand</td>
+            <td class="p-4">400+</td>
+            <td class="p-4">90</td>
+            <td class="p-4">230</td>
+            <td class="p-4">80</td>
+          </tr>
+          <tr class="hover:bg-gray-100 transition">
+            <td class="p-4 font-medium">Kerala</td>
+            <td class="p-4">420+</td>
+            <td class="p-4">85</td>
+            <td class="p-4">250</td>
+            <td class="p-4">85</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Conservation Status -->
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">Conservation Status</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-red-600">Endangered</h3>
+        <p class="mt-2 text-gray-600">Species like the Bengal Tiger, Asiatic Lion, and Gharial are critically endangered and protected under the Wildlife Protection Act 1972.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-bold text-yellow-600">Vulnerable</h3>
+        <p class="mt-2 text-gray-600">Species such as the Snow Leopard, Indian Pangolin, and Red Panda fall under this category. Conservation projects are ongoing.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Species Cards -->
+ <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
+  <!-- Species 1 -->
+  
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden"   class="cursor-pointer hover:scale-105 transition">
+     <a href="./tigers.html" target="_blank">
+      <img src="images/species/tiger.jpg" alt="Bengal Tiger" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Bengal Tiger</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Forests & Mangroves<br>🍴 Diet: Carnivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">Apex predator crucial to forest ecosystems, found mostly in India and Bangladesh.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 2 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./elephant.html" target="_blank">
+    <img src="images/species/elephant.jpg" alt="Asiatic Elephant" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Asiatic Elephant</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Grasslands & Forests<br>🍴 Diet: Herbivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">Large herbivore, intelligent and social, helps maintain forest ecology.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 3 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./leopard.html" target="_blank">
+    <img src="images/species/snow-leopard.jpg" alt="Snow Leopard" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Snow Leopard</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Himalayas<br>🍴 Diet: Carnivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Elusive predator of the Himalayas, threatened by habitat fragmentation.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 4 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./rhinoceros.html" target="_blank">
+    <img src="images/species/rhino.jpg" alt="One-Horned Rhinoceros" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">One-Horned Rhinoceros</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Grasslands & Swamps<br>🍴 Diet: Herbivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Native to India, this rhino is making a comeback through conservation.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 5 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./peacock.html" target="_blank">
+    <img src="images/species/peacock.jpg" alt="Indian Peacock" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Indian Peacock</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Forests & Farmlands<br>🍴 Diet: Omnivore<br>⚠️ Status: Least Concern</p>
+      <p class="mt-2 text-gray-700">India's national bird, known for its vibrant feathers and courtship display.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 6 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./turtle.html" target="_blank">
+    <img src="images/species/turtle.jpg" alt="Olive Ridley Turtle" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Olive Ridley Turtle</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Beaches & Oceans<br>🍴 Diet: Omnivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Famous for mass nesting in Odisha, needs protection from plastic and fishing nets.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 7 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./pangolin.html" target="_blank">
+    <img src="images/species/Pangolin.jpg" alt="Indian Pangolin" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Indian Pangolin</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Forests & Grasslands<br>🍴 Diet: Insectivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Scaly mammal hunted for scales, plays a key role in pest control.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 8 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./bustard.html" target="_blank">
+    <img src="images/species/great-indian-bustard.jpg" alt="Great Indian Bustard" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Great Indian Bustard</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Grasslands<br>🍴 Diet: Omnivore<br>⚠️ Status: Critically Endangered</p>
+      <p class="mt-2 text-gray-700">One of the heaviest flying birds, facing extinction due to power lines and loss of habitat.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 9 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./red-panda.html" target="_blank">
+    <img src="images/species/red-panda.jpg" alt="Red Panda" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Red Panda</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Temperate Forests<br>🍴 Diet: Herbivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">Shy and elusive, found in Eastern Himalayas, dependent on bamboo forests.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 10 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./cobra.html" target="_blank">
+    <img src="images/species/cobra.jpg" alt="Indian Cobra" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Indian Cobra</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Forests & Fields<br>🍴 Diet: Carnivore<br>⚠️ Status: Least Concern</p>
+      <p class="mt-2 text-gray-700">A famous venomous snake with a hood, part of India's snake charmers’ culture.</p>
+    </div>
+    </a>
+  </div>
+  <!-- Species 11 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./gharial.html" target="_blank">
+    <img src="images/species/gharial.jpg" alt="Gharial" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Gharial</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Rivers & Freshwater<br>🍴 Diet: Carnivore<br>⚠️ Status: Critically Endangered</p>
+      <p class="mt-2 text-gray-700">A crocodilian with a slender snout, found in Indian rivers like Chambal.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 12 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./blackbuck.html" target="_blank">
+    <img src="images/species/blackbuck.jpg" alt="Blackbuck" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Blackbuck</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Grasslands<br>🍴 Diet: Herbivore<br>⚠️ Status: Near Threatened</p>
+      <p class="mt-2 text-gray-700">Fast-running antelope species native to Indian subcontinent.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 13 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./nilgiri-tahr.html" target="_blank">
+    <img src="images/species/nilgiri-tahr.jpg" alt="Nilgiri Tahr" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Nilgiri Tahr</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Mountain Grasslands<br>🍴 Diet: Herbivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">Endemic to the Western Ghats, this mountain goat is an agile climber.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 14 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./star-tortoise.html" target="_blank">
+    <img src="images/species/star-tortoise.jpg" alt="Indian Star Tortoise" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Indian Star Tortoise</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Dry Forests<br>🍴 Diet: Herbivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Terrestrial tortoise with beautiful star-like shell patterns.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 15 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./lion-tailed-macaque.html" target="_blank">
+    <img src="images/species/macaque.jpg" alt="Lion-tailed Macaque" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Lion-tailed Macaque</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Rainforests<br>🍴 Diet: Omnivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">Arboreal monkey found only in Western Ghats, known for its mane-like tail.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 16 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./malabar-civet.html" target="_blank">
+    <img src="images/species/malabar-civet.jpg" alt="Malabar Civet" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Malabar Civet</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Tropical Rainforest<br>🍴 Diet: Carnivore<br>⚠️ Status: Critically Endangered</p>
+      <p class="mt-2 text-gray-700">Rare nocturnal animal once abundant in Kerala, now critically endangered.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 17 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./sarus-crane.html" target="_blank">
+    <img src="images/species/sarus-crane.jpg" alt="Sarus Crane" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Sarus Crane</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Wetlands<br>🍴 Diet: Omnivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">Tallest flying bird, symbol of fidelity due to life-long pair bonding.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 18 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./indian-wolf.html" target="_blank">
+    <img src="images/species/indian-wolf.jpg" alt="Indian Wolf" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Indian Wolf</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Scrublands<br>🍴 Diet: Carnivore<br>⚠️ Status: Endangered</p>
+      <p class="mt-2 text-gray-700">A subspecies of grey wolf found across India’s plains and semi-arid zones.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 19 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./fishing-cat.html" target="_blank">
+    <img src="images/species/fishing-cat.jpg" alt="Fishing Cat" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Fishing Cat</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Mangroves & Wetlands<br>🍴 Diet: Carnivore<br>⚠️ Status: Vulnerable</p>
+      <p class="mt-2 text-gray-700">A wild cat that loves water and preys on fish near riverbanks.</p>
+    </div>
+    </a>
+  </div>
+
+  <!-- Species 20 -->
+  <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+    <a href="./bar-headed-goose.html" target="_blank">
+    <img src="images/species/bar-headed-goose.jpg" alt="Bar-headed Goose" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-2xl font-bold text-green-800">Bar-headed Goose</h3>
+      <p class="text-sm text-gray-600">🌍 Habitat: Wetlands & Mountains<br>🍴 Diet: Herbivore<br>⚠️ Status: Least Concern</p>
+      <p class="mt-2 text-gray-700">Amazing high-altitude flier, crosses Himalayas during migration.</p>
+    </div>
+    </a>
+  </div>
+
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-white text-center p-4 mt-8">
+    &copy; 2025 Wildlife Diversity Portal | Designed by Chandan Kumar
+  </footer>
+
+</body>
+</html>

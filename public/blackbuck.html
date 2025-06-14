@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Blackbuck - Wildlife Conservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-up.visible {
+      animation: fadeUp 1s forwards;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-yellow-900 text-white p-6 text-center shadow-lg fade-up">
+    <h1 class="text-4xl font-bold">Indian Blackbuck - Wildlife Conservation</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- Introduction -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Introduction</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Blackbuck (*Antilope cervicapra*), also known as the Indian antelope, is one of the most graceful and fastest terrestrial animals in the Indian subcontinent. With its elegant spiraled horns and sleek body, it represents a symbol of agility and beauty in the wild. The male is known for its striking dark brown to black upper parts contrasting with white underparts, while the female is usually fawn-colored and lacks horns.
+        <br><br>
+        Found primarily in grasslands and semi-arid regions, Blackbucks are iconic to the Indian savannas. They are herbivores and exhibit strong group behavior, forming herds led by dominant males. Once widespread, their numbers dwindled due to hunting and habitat loss. Today, conservation programs are gradually reviving their populations.
+      </p>
+    </section>
+
+    <!-- Classification and Habitat -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Classification and Habitat</h2>
+      <p class="text-lg leading-relaxed">
+        Blackbucks belong to the Bovidae family and are scientifically classified as:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li><strong>Kingdom:</strong> Animalia</li>
+          <li><strong>Phylum:</strong> Chordata</li>
+          <li><strong>Class:</strong> Mammalia</li>
+          <li><strong>Order:</strong> Artiodactyla</li>
+          <li><strong>Family:</strong> Bovidae</li>
+          <li><strong>Genus:</strong> Antilope</li>
+          <li><strong>Species:</strong> A. cervicapra</li>
+        </ul>
+        Blackbucks thrive in open plains and grasslands, preferring areas with minimal forest cover. They are most active during cooler parts of the day, grazing on grasses, cereals, and pods. Their speed and agility help them evade predators like wolves and stray dogs.
+      </p>
+    </section>
+
+    <!-- About Indian Blackbuck -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">About the Indian Blackbuck</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="./images/species/blackbuck.jpg"
+               alt="Indian Blackbuck"
+               class="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition duration-300 ease-in-out">
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed">
+            The Indian Blackbuck is native to the Indian subcontinent and is mainly found in India and parts of Nepal and Pakistan. Males have beautiful spiraled horns that can reach up to 70 cm in length and exhibit a seasonal darkening of their coat.
+            <br><br>
+            Blackbucks are known for their high-speed gallops and twisting jumps, especially during the rutting season. Males establish territories and engage in sparring duels using their horns to attract females. The mating season generally falls between March and May.
+            <br><br>
+            They are diurnal and can often be seen grazing in herds of 15 to 50 individuals. Females give birth to one fawn after a gestation period of about 6 months, and the young ones are highly alert and able to stand shortly after birth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribution in India -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Presence in India</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Blackbuck is predominantly found in:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Gujarat – Velavadar Blackbuck National Park</li>
+          <li>Rajasthan – Tal Chhapar Sanctuary</li>
+          <li>Punjab and Haryana grasslands</li>
+          <li>Maharashtra, Karnataka, Andhra Pradesh, and Tamil Nadu</li>
+        </ul>
+        Conservation efforts have helped reintroduce Blackbucks into protected zones. Their population has increased notably in community-led conservation areas such as Bishnoi villages in Rajasthan, where they are revered and protected by local communities.
+      </p>
+    </section>
+
+    <!-- Threats and Conservation -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Threats and Conservation</h2>
+      <p class="text-lg leading-relaxed">
+        The Blackbuck is listed as *Least Concern* on the IUCN Red List but is protected under Schedule I of the Wildlife Protection Act, 1972. Major threats include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Poaching for meat, hide, and trophies</li>
+          <li>Habitat fragmentation due to agriculture and urban expansion</li>
+          <li>Vehicle collisions and competition with livestock</li>
+          <li>Lack of corridors between grasslands</li>
+        </ul>
+        Conservation actions include:
+        <ul class="list-disc pl-6 mt-4 text-lg space-y-1">
+          <li>Establishment of Blackbuck sanctuaries</li>
+          <li>Community-based protection efforts</li>
+          <li>Awareness programs and anti-poaching laws</li>
+          <li>Ecotourism and habitat restoration</li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-xl shadow-lg fade-up">
+      <h2 class="text-3xl font-bold text-yellow-800 mb-4">Conclusion</h2>
+      <p class="text-lg leading-relaxed">
+        The Indian Blackbuck stands as a testament to India’s rich grassland biodiversity. With its speed, elegance, and resilience, it captures the admiration of wildlife enthusiasts and conservationists alike. Continued protection, awareness, and sustainable development can ensure this majestic species remains a vibrant part of India’s wildlife heritage. Let us pledge to safeguard their habitats and respect their rightful place in the ecosystem.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-900 text-white text-center p-4 mt-10 fade-up">
+    <p>&copy; 2025 Wildlife Diversity Portal | Created by Chandan Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
